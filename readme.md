@@ -1,13 +1,8 @@
-# Capstone Projet Cloud Fundamental
-
-![](images/mb.png)
-![](images/ms.png)
-![](images/azure.png)
-
+# Capstone Projet Cloud Fundamental Bidang Pendidikan
 # Dokumentasi LMS Dothings
 
 DoThings merupakan organisasi non-profit yang
-DoThings merupakan organisasi non-profit yang bergerak pada bidang pendidikan yang mengusung edukasi mengenai Industri 4.0. DoThings memberikan edukasi mengenai ilmu Elektronika, IoT, Mikrokontroller, Raspberry, hingga PLC(Programming Logic Control).
+DoThings merupakan organisasi non-profit yang bergerak pada bidang pendidikan yang mengusung edukasi mengenai Industri 4.0. DoThings memberikan edukasi mengenai ilmu Elektronika, IoT, Mikrokontroller, Raspberry, hingga PLC(Programmable Logic Controller).
 
 ## Arsitektur Deployment
 
@@ -87,7 +82,7 @@ docker-compose up -d
 ## Konfigurasi DNS pada Aplikasi LMS DoThings
 
 Alamat web sudah memiliki DNS dengan alamat
-[dothings.cf-002.space]
+https://dothings.cf-002.space/
 
 **DNS dikonfigurasi menggunakan CloudFlare yang bertujuan untuk mengintegrasikan keaman SSL/TLS serta pencegaha Distributed Denial of Service.**
 
@@ -95,20 +90,20 @@ Alamat web sudah memiliki DNS dengan alamat
 
 ### Reliability
 
-Dothings untuk saat ini hanya memiliki tidak lebih 150 siwa. Karena hal inilah, dari sisi reliability moodle-vm dengan skema hardware D2s V3 bisa menangani request dari user sebanyak itu. Selain itu, moodle-vm memiliki 1 availability zone sebagai toleransi ketika terjadi suatu kegagalan, dan meningkatkan Uptime SLA VM menjadi 99.99%
+Dothings untuk saat ini hanya memiliki tidak lebih 150 siwa. Karena hal inilah, dari sisi reliability moodle-vm dengan skema hardware D2s V3 bisa menangani request dari user sebanyak itu. Selain itu, moodle-vm memiliki 1 availability zone sebagai toleransi ketika terjadi suatu kegagalan, dan meningkatkan Uptime SLA VM menjadi 99.99%.
 
-### Cost Optimazation
+### Cost Optimization
 
 moodle-vm memiliki cost Rp 1,955.0000/hr. Dengan mempertimbangkan kemampuan virtual machine mulai dari availability zone, 2 CPU dengan memori 8 GB, maka Cost sudah optimal.
 
-### Operational excellence
+### Operational Excellence
 
 Dari sisi moodle-vm memiliki docker yang sudah di install yang mana hal ini akan mempermudah proses produksi dan mempermudah rollback ketika kegagalan pada suatu pembaruan terjadi.
 
 ### Performance Efficiency
 
-Disini moodle-vm menggunakan 1 availability zone yang artinya moodle-vm dapat melakukan scaling untuk menjamin kenyaman pengguna
+Disini moodle-vm menggunakan 1 availability zone yang artinya moodle-vm dapat melakukan scaling untuk menjamin kenyamanan pengguna.
 
 ### Security
 
-Pada sisi keamanan, sumber daya ini sudah memiliki pencegahan DDOS juga menggunakan SSL SHA 256 Support TLS 1.3
+Pada sisi keamanan, sumber daya ini sudah memiliki pencegahan DDOS juga menggunakan SSL SHA 256 Support TLS 1.3.
