@@ -24,12 +24,12 @@ DoThings merupakan organisasi non-profit yang bergerak pada bidang pendidikan ya
 
 ## Deployment Virtual Machine untuk LMS
 
-- Deployment menggunakan resource group bernama moodlel-resources
+- Deployment menggunakan resource group bernama moodle-resources
 - Deployment Menggunakan Layanan Azure Virtual Machine menggunakan Sistem Operasi Linux Ubuntu 20.04 LTS yang diberi nama moodle-vm
 - moodle-vm memiliki region Asia Pacific : Asia Tenggara
 - moodle-vm ini memiliki 1 availability zone
 - Skema hardware yang digunakan pada VM moodle-vm merupakan D2s V3 (2 vcpus, 8 GB memory)
-- Inbound Port Rules yang diperbolehkan pada VM moodle-vm adalah SSL Port 22, HTTP Port 80, dan HTTPS Port 443
+- Inbound Port Rules yang diperbolehkan pada VM moodle-vm adalah SSH Port 22, HTTP Port 80, dan HTTPS Port 443
 
 ![Network Rules](images/nsg.PNG)
 
